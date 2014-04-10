@@ -1,5 +1,5 @@
 #	-------------------------------------
-#	TERMINAL IMPROVEMENTS
+#			TERMINAL IMPROVEMENTS
 #	-------------------------------------
 alias finder='open -a "Path Finder" ./'		# Open directory in finder. Replace "Path Finder" with "Finder" if you don't own Path Finder.
 alias numFiles='echo $(ls -1 | wc -l)'		# Show the number of visible files in folder.
