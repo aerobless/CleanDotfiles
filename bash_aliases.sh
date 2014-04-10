@@ -1,3 +1,11 @@
+#	-------------------------------------
+#	TERMINAL IMPROVEMENTS
+#	-------------------------------------
+alias finder='open -a "Path Finder" ./'		# Open directory in finder. Replace "Path Finder" with "Finder" if you don't own Path Finder.
+alias numFiles='echo $(ls -1 | wc -l)'		# Show the number of visible files in folder.
+alias reload_profile=". ~/.bash_profile"	# Reload the profiles
+alias preview='open -a "Preview"'			# Open file in preview
+
 #ToxicTodo
 alias todo="java -jar /Users/theowinter/Dropbox/SYNC/apps/ToxicTodo/ToxicTodoClient.jar"
 
@@ -7,12 +15,7 @@ alias ghoul="cd /usr/local/Cellar/ruby/2.1.1/bin/ghoul.io"
 alias glynn="/usr/local/Cellar/ruby/2.1.1/bin/glynn"
 alias gbuild="cd /usr/local/Cellar/ruby/2.1.1/bin/ghoul.io/; /usr/local/Cellar/ruby/2.1.1/bin/glynn;"
 
-#Custom Commands
-alias reload_profile=". ~/.profile"
-alias preview="open /Applications/Preview.app"
-alias edit_profile="vim /Users/theowinter/Dropbox/0_blood_system/bashSync/public_profile"
-
-#Shadow Drive & other secrets
+#Shadow Drive
 alias shadow_drive="hdiutil attach '/Users/theowinter/Dropbox/0_blood_system/shadow_storage.sparsebundle'"
 
 #Web Quick Access
@@ -20,10 +23,6 @@ alias music="open https://play.google.com/music/listen?view=/settings&hl=en&u=0#
 
 #Mounts
 alias hsr_skripte="mount -t smbfs //twinter@c206.hsr.ch/skripte 'HSR Skripte'"
-
-#Open current directory in finder
-# alias finder='open -a "Finder" ./'
-alias finder='open -a "Path Finder" ./'
 
 #   showa: to remind yourself of an alias (given some part of it)
 #   ------------------------------------------------------------
