@@ -23,3 +23,36 @@ function makeGif() {
     	echo -n "Error: Please specify a file like this: makeGif /Users/yourname/Desktop/Recording.mov"
   	fi
  }
+ 
+ function googleSay() {
+    echo
+    echo "GOOGLE TEXT TO SPEECH SHELL TOOL"
+    echo "@author Alberto Miranda <alberto.php@gmail.com>"
+    echo "-------------------------------------------------------------------"
+    
+    args=("$@")
+    argsCount=${#args[@]}
+    if [ $argsCount -lt 1 ]; then
+        echo "Usage: say [string] [lang]"
+        echo "Default language is en (english)"
+        echo "Example: say 'Raspberry Pi rocks! Yeah!'"
+        echo "IMPORTANT: write your text between single quotes." 
+        echo
+        return 0
+    fi  
+
+    #set params
+    text=$1
+    lang=$2
+
+    #default language
+    if [ -z $lang ]; then
+        lang="en"
+    fi  
+
+    echo "+ SAY '$text' ($lang)"
+    mplayer  "http://translate.google.com.mx/translate_tts?tl=$lang&q=$text" > /dev/null 2>&1; 
+
+    echo "DONE."
+    echo
+}
