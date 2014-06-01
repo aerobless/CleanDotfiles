@@ -10,12 +10,6 @@ alias loc='git ls-files | xargs cat | wc -l'	# Lines of code in a local git-repo
 #ToxicTodo
 alias todo="java -jar /Users/theowinter/Dropbox/SYNC/apps/ToxicTodo/ToxicTodoClient.jar"
 
-#Jekyll
-alias jekyll="/usr/local/Cellar/ruby/2.1.1/bin/jekyll"
-alias ghoul="cd /usr/local/Cellar/ruby/2.1.1/bin/ghoul.io"
-alias glynn="/usr/local/Cellar/ruby/2.1.1/bin/glynn"
-alias gbuild="cd /usr/local/Cellar/ruby/2.1.1/bin/ghoul.io/; /usr/local/Cellar/ruby/2.1.1/bin/glynn;"
-
 #Shadow Drive
 alias shadow_drive="hdiutil attach '/Users/theowinter/Dropbox/0_blood_system/shadow_storage.sparsebundle'"
 

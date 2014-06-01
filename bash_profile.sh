@@ -1,5 +1,6 @@
 #Load brew-tools first
 export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/bin:/usr/local/Cellar/ruby/2.1.2/bin:/usr/local/Cellar/ruby/2.1.1/bin
 
 #Connect to Postgres Server on OS X
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
