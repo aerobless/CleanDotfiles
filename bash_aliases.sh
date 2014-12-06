@@ -6,6 +6,7 @@ alias numFiles='echo $(ls -1 | wc -l)'			# Show the number of visible files in f
 alias reload_profile=". ~/.bash_profile"		# Reload the profiles
 alias preview='open -a "Preview"'				# Open file in preview
 alias loc='git ls-files | xargs cat | wc -l'	# Lines of code in a local git-repository
+alias ip='ipconfig getifaddr en0'               # Display the ip of the main ethernet adapter
 
 #ToxicTodo
 alias todo="java -jar /Users/theowinter/Dropbox/SYNC/apps/ToxicTodo/ToxicTodoClient.jar"
