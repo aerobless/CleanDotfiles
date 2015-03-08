@@ -7,6 +7,8 @@ alias reload_profile=". ~/.bash_profile"		# Reload the profiles
 alias preview='open -a "Preview"'				# Open file in preview
 alias loc='git ls-files | xargs cat | wc -l'	# Lines of code in a local git-repository
 alias ip='ipconfig getifaddr en0'               # Display the ip of the main ethernet adapter
+alias hosts='open /private/etc/hosts'           # Opens the hosts file, so you can add custom domain->IP redirects
+alias dnsflush='sudo dscacheutil -flushcache && open http://chrome:://net-internals/#dns'   # Flush OS X DNS Cache
 
 #ToxicTodo
 alias todo="java -jar /Users/theowinter/Dropbox/SYNC/apps/ToxicTodo/ToxicTodoClient.jar"
