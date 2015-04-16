@@ -56,8 +56,9 @@ sudo nvram SystemAudioVolume=" "
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 #Speeding up Mission Control animations and grouping windows by application
-defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults write com.apple.dock expose-animation-duration -int 0
 defaults write com.apple.dock "expose-group-by-app" -bool true
+killall Dock
 
 #Enabling Safari's developer mode.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
