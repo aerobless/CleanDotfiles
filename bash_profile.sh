@@ -1,15 +1,12 @@
 #Load brew-tools first
 export PATH=/usr/local/bin:$PATH
 
-#Connect to Postgres Server on OS X
-PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-
 #Always enable LS colors
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 #Go Workspace
-export GOPATH=$HOME/go
+export GOPATH=$HOME/GO_WORKSPACE/
 export PATH=$PATH:$GOPATH/bin
 
 # Always enable GREP colors

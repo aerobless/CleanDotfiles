@@ -24,7 +24,7 @@ function makeGif() {
   	fi
  }
  
- function googleSay() {
+function googleSay() {
     echo
     echo "GOOGLE TEXT TO SPEECH SHELL TOOL"
     echo "@author Alberto Miranda <alberto.php@gmail.com>"
