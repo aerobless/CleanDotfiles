@@ -1,3 +1,15 @@
+#!/bin/bash
+#-----------------------------------------------------------#
+#  Title:  clean.setup.sh                                   #
+#  URL:    https://github.com/aerobless/CleanDotfiles       #
+#  Author: Theo Winter                                      #
+#                                                           #
+#  Setup OS X with one script. Make sure to read it before  #
+#  you run it though.                                       #
+#-----------------------------------------------------------#
+
+
+
 echo ""
 echo "--------------------------------------------------------------------"
 echo "                  Theo's OS X Initial Setup Script                  "
@@ -17,7 +29,14 @@ then
     exit 1
 fi
 
-#Install Homebrew (required for following installs)
+
+
+#-----------------------------------------------------------#
+# 1. Install tools                                          #
+#-----------------------------------------------------------#
+echo "Installing tools.."
+
+#Install Homebrew (required for following installations)
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 	#Install git (Source-Control)
@@ -45,8 +64,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 	#Install cask (Install GUI-application via brew)
 	brew install brew-cask
-	
-#Settings:
+
+
+
+#-----------------------------------------------------------#
+# 2. Write defaults                                         #
+#-----------------------------------------------------------#
 echo "Writing new settings.."
 
 # Disable the sound effects on boot
